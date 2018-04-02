@@ -1,0 +1,41 @@
+<section class="dialog">
+    <div class="d-content">确定删除？</div>
+    <div class="dialog-btn-wrap">
+        <a href="#" class="d-btn delete">取消</a>
+        <a href="#" class="d-btn">确定</a>
+    </div>
+</section>
+<section class="page-info-dialog-mask" id="pageInfoDialog" style="display: none">
+    <form action="" method="post" class="bootstrap-frm">
+        <h1>作品信息设置</h1>
+        <div class="form-content form-content1">
+            <label>
+            <span>作者</span>
+            <input id="author" type="text" name="name" placeholder="请输入作品作者" />
+        </label>
+            <label>
+            <span>标题 :</span>
+            <input id="projectName" type="text" name="title" placeholder="请输入作品标题" />
+        </label>
+            <label>
+            <span>描述 :</span>
+            <textarea id="projectDiscript" name="desc" placeholder="请输入作品描述"></textarea>
+        </label>
+            <label>
+            <span>作品封面 :</span>
+            <div class="img-sel" id='uploadCover'>
+                <div class="add" id="uploadCoverBtn">+</div>
+                <div class="size-tip"></div>
+                </div>
+                <div class="img-selected"></div>
+            </div> 
+         
+        </label>
+        </div>
+        <label class="bottom-btn">
+            <span>&nbsp;</span>
+            <input type="button" class="button" value="确定" id='sure' />
+            <input type="button" class="button" value="取消" id='cancel'/>
+        </label>
+    </form>
+</section>

@@ -1,0 +1,1 @@
+mongodb启动：打开文件件 ./mongod --dbpath D:/data

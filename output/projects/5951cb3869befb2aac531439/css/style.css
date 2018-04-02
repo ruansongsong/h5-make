@@ -1,0 +1,117 @@
+/************************** common **************************/
+
+html,
+body {
+    position: relative;
+    overflow: hidden;
+    touch-action: none;
+}
+
+.page-box {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    background: no-repeat center center #FFFFFF;
+    background-size: 100% 100%;
+}
+
+.page-box.show {
+    visibility: visible;
+}
+
+.item {
+    position: absolute;
+    background-repeat: no-repeat;
+    opacity: 0;
+    text-align: center;
+}
+
+.pre-item {
+    position: absolute;
+    bottom: 0.784314rem;
+    left: 50%;
+    opacity: 0;
+}
+
+.item.show {
+    opacity: 1
+}
+
+.pre-item.show {
+    opacity: 1
+}
+
+.pre-wrap {
+    width: 1.568627rem;
+    height: 1.568627rem;
+    position: absoulte;
+    left: 50%;
+    margin-left: -0.784314rem;
+    background: url(../images/pointer.png) no-repeat center center;
+    background-size: 100% 100%;
+    -webkit-animation: start 3s infinite ease-in-out;
+    -moz-animation: start 3s infinite ease-in-out;
+    animation: start 3s infinite ease-in-out;
+}
+
+.cover {
+    position: absolute;
+}
+
+.cover img {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/************* item style ***********************/
+
+#page1 {
+    background-color: #ffffff;
+}
+
+.page1-item1 {
+    width: 7.843137rem;
+    height: 1.176471rem;
+    left: 2.352941rem;
+    top: 10.549020rem;
+    color: #000000;
+    font-size: 12px;
+    line-height: 1.176471rem;
+}
+
+.page1-item2 {
+    width: 3.921569rem;
+    height: 3.921569rem;
+    left: 2.666667rem;
+    top: 2.823529rem;
+    color: #undefined;
+    line-height: 3.921569rem;
+}
+
+
+/**************** animate class **************************/
+
+.flash2000 {
+    -webkit-animation: flash 2s ease 1 both;
+    -webkit-animation-play-state: initial;
+    animation: flash 2s ease 1 both;
+    animation-play-state: initial;
+    opacity: 1;
+}
+
+.none2000 {
+    -webkit-animation: none 2s ease 1 both;
+    -webkit-animation-play-state: initial;
+    animation: none 2s ease 1 both;
+    animation-play-state: initial;
+    opacity: 1;
+}

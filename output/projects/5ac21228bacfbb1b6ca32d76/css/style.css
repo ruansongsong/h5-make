@@ -1,0 +1,82 @@
+/************************** common **************************/
+
+html,
+body {
+    position: relative;
+    overflow: hidden;
+    touch-action: none;
+}
+
+.page-box {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    background: no-repeat center center #FFFFFF;
+    background-size: 100% 100%;
+}
+
+.page-box.show {
+    visibility: visible;
+}
+
+.item {
+    position: absolute;
+    background-repeat: no-repeat;
+    opacity: 0;
+    text-align: center;
+}
+
+.pre-item {
+    position: absolute;
+    bottom: 0.784314rem;
+    left: 50%;
+    opacity: 0;
+}
+
+.item.show {
+    opacity: 1
+}
+
+.pre-item.show {
+    opacity: 1
+}
+
+.pre-wrap {
+    width: 1.568627rem;
+    height: 1.568627rem;
+    position: absoulte;
+    left: 50%;
+    margin-left: -0.784314rem;
+    background: url(../images/pointer.png) no-repeat center center;
+    background-size: 100% 100%;
+    -webkit-animation: start 3s infinite ease-in-out;
+    -moz-animation: start 3s infinite ease-in-out;
+    animation: start 3s infinite ease-in-out;
+}
+
+.cover {
+    position: absolute;
+}
+
+.cover img {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/************* item style ***********************/
+
+#page1 {
+    background-color: #ffffff;
+}
+
+
+/**************** animate class **************************/
